@@ -2,7 +2,10 @@ package com.digizol.grpc.java.ms.product.service.grpc;
 
 import com.digizol.grpc.java.ms.product.controller.ReviewData;
 import com.digizol.grpc.java.ms.product.service.ReviewDataRepository;
-import com.digizol.grpc.java.ms.review.grpc.*;
+import com.digizol.grpc.java.ms.review.grpc.ProductId;
+import com.digizol.grpc.java.ms.review.grpc.Review;
+import com.digizol.grpc.java.ms.review.grpc.ReviewServiceGrpc;
+import com.digizol.grpc.java.ms.review.grpc.Reviews;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import org.apache.logging.log4j.LogManager;
@@ -11,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
-import java.util.Arrays;
 
 @Service
 public class ReviewDataRepositoryGrpcImpl implements ReviewDataRepository {
