@@ -1,0 +1,12 @@
+server:
+  port: 6060
+
+spring:
+  jackson:
+    serialization:
+      indent_output: true
+
+reviewdata:
+  server:
+    host: localhost
+    port: 5050
